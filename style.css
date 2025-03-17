@@ -45,6 +45,7 @@ body, button {
     border-radius: 8px;
     background: hsl(0, 100%, 100%, 0.5);
     border: none;
+    cursor: pointer;
   }
 
   /* Animated Navbar & Header on Scroll  */
@@ -219,6 +220,7 @@ body, button {
     padding: 0;
     display: flex;
     justify-content: center;
+    cursor: pointer;
   }
 
   .dots li {
@@ -375,7 +377,7 @@ body, button {
 
 .videos-section div {
   /* background: gray; */
-  padding: 8px 16px;
+  /* padding: 8px 16px; */
   border-radius: 8px;
   box-shadow: 2px 0px 10px rgba(128, 128, 128, 0.322);
   transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -386,11 +388,15 @@ body, button {
 }
 
 iframe {
-  width: 100%;
+  width: caLc((1366px - 64px - 96px)/3);
   height: 200px;
-  border-radius: 8px;
+  border-radius: 8px 8px 0 0;
   margin-bottom: 8px;
   border: none;
+}
+
+.videos-section div h4 {
+  padding: 8px 16px;
 }
 
 /* Our Old News Section */
