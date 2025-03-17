@@ -324,7 +324,9 @@ body, button {
 
 .client-slider .client-list .client-item img {
   width: 100%;
+  aspect-ratio: 3/2;
   object-fit: contain;
+  mix-blend-mode: color-burn;
 }
 
 @keyframes autoRun{
@@ -428,6 +430,10 @@ iframe {
   border-radius: 8px 8px 0 0;
 }
 
+.our-old-news-card div p {
+  font-size: 12px;
+}
+
 .our-old-news-card {
   /* background: white;
   color: black; */
@@ -450,7 +456,7 @@ iframe {
 
 .our-old-news-card > div > .news-icons-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .news-icons-grid img {
@@ -462,13 +468,6 @@ iframe {
 
 .news-icons-grid img:hover {
   transform: scale(1.3);
-}
-
-.our-old-news-card > div > div {
-  display: flex;
-  /* flex-direction: column; */
-  justify-content: space-between;
-  padding: 0;
 }
 
 button.old-news-button {
@@ -490,6 +489,9 @@ button.old-news-button {
 
 button.old-news-button:hover {
   transform: scale(1.125);
+  background: white;
+  border: 1px solid darkgreen;
+  color: darkgreen;
 }
 
 
@@ -536,7 +538,7 @@ button.old-news-button:hover {
   flex-direction: column;
   align-items: center;
   gap: 48px;
-  padding: 64px 0;
+  padding: 96px 0;
 }
 
 .career-work-life-balance .head {
