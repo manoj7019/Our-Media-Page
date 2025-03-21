@@ -53,6 +53,6 @@ let viewMoreBtn = document.getElementById('view-more-btn');
 
 viewMoreBtn.addEventListener('click', () => {
     oldestNews.style.display = 'flex';
-    
+    viewMoreBtn.style.display = 'none';
 })
 
