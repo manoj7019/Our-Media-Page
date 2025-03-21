@@ -16,6 +16,7 @@ body, button {
     text-align: center;
     margin: 0 auto;
     font-size: 36px;
+    color: darkgreen;
   }
 
   h3 {
@@ -456,13 +457,15 @@ iframe {
 
 .our-old-news-card > div > .news-icons-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  width: 300px;
+  grid-template-columns: repeat(3, 1fr);
 }
+
 
 .news-icons-grid img {
   height: 24px;
   width: auto;
-  object-fit: contain;
+  object-fit: cover;
   transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -719,6 +722,7 @@ button.media-kit-button:hover {
 
 footer {
   background: black;
+  width: 100%;
 }
 
 .footer-container {
