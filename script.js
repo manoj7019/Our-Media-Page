@@ -56,3 +56,83 @@ viewMoreBtn.addEventListener('click', () => {
     viewMoreBtn.style.display = 'none';
 })
 
+// Inside GPS Renewables Section 
+
+let interviewBtn = document.getElementById('interview-btn');
+let projectBtn = document.getElementById('project-btn');
+let eventBtn = document.getElementById('event-btn');
+
+let interviewSection = document.getElementById('interviews-videos');
+let projectSection = document.getElementById('projects-videos');
+let eventSection = document.getElementById('events-videos');
+
+interviewBtn.addEventListener('click', () => {
+    interviewSection.style.display = 'grid';
+    projectSection.style.display = 'none';
+    eventSection.style.display = 'none';
+
+    interviewBtn.classList.add('active-inside-gpsr-btn');
+    projectBtn.classList.remove('active-inside-gpsr-btn');
+    eventBtn.classList.remove('active-inside-gpsr-btn');
+})
+
+projectBtn.addEventListener('click', () => {
+    interviewSection.style.display = 'none';
+    projectSection.style.display = 'grid';
+    eventSection.style.display = 'none';
+
+    interviewBtn.classList.remove('active-inside-gpsr-btn');
+    projectBtn.classList.add('active-inside-gpsr-btn');
+    eventBtn.classList.remove('active-inside-gpsr-btn');
+})
+
+eventBtn.addEventListener('click', () => {
+    interviewSection.style.display = 'none';
+    projectSection.style.display = 'none';
+    eventSection.style.display = 'grid';
+
+    interviewBtn.classList.remove('active-inside-gpsr-btn');
+    projectBtn.classList.remove('active-inside-gpsr-btn');
+    eventBtn.classList.add('active-inside-gpsr-btn');
+})
+
+
+let workspaceBtn = document.getElementById('workspace-btn');
+let lifeatgpsBtn = document.getElementById('life-at-gps-btn');
+let industryeventsBtn = document.getElementById('industry-events-btn');
+
+let workspaceSection = document.getElementById('workspace-section');
+let lifeatgpsSection = document.getElementById('life-at-gps-section');
+let industryeventsSection = document.getElementById('industry-events-section');
+
+workspaceBtn.addEventListener('click', () => {
+    workspaceSection.style.display = 'grid';
+    lifeatgpsSection.style.display = 'none';
+    industryeventsSection.style.display = 'none';
+
+    workspaceBtn.classList.add('active-photo-gallery-btn');
+    lifeatgpsBtn.classList.remove('active-photo-gallery-btn');
+    industryeventsBtn.classList.remove('active-photo-gallery-btn');
+})
+
+lifeatgpsBtn.addEventListener('click', () => {
+    workspaceSection.style.display = 'none';
+    lifeatgpsSection.style.display = 'grid';
+    industryeventsSection.style.display = 'none';
+
+    workspaceBtn.classList.remove('active-photo-gallery-btn');
+    lifeatgpsBtn.classList.add('active-photo-gallery-btn');
+    industryeventsBtn.classList.remove('active-photo-gallery-btn');
+})  
+
+industryeventsBtn.addEventListener('click', () => {         
+    workspaceSection.style.display = 'none';
+    lifeatgpsSection.style.display = 'none';
+    industryeventsSection.style.display = 'grid';
+
+    workspaceBtn.classList.remove('active-photo-gallery-btn');
+    lifeatgpsBtn.classList.remove('active-photo-gallery-btn');
+    industryeventsBtn.classList.add('active-photo-gallery-btn');
+})
+
+
